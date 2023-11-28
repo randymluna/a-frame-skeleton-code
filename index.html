@@ -6,12 +6,39 @@
   </head>
   <body>
     <a-scene id = "scene">
-      
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
+    
+    </a-entity>
+  
+    <a-entity
+      position="2 3 -2"
+      animation__2="property: position; to: 2 .5 -2; loop: true; dur: 2000"
+    >
+      <a-box color="yellow" width="1" height="1" depth="1" light="type: point; color: #FFA500; intensity: 1;" ></a-box>
+    </a-entity>
+
+
+        </a-entity>
+
+        <a-box position="0 0 0" color="red" width="1" height="1" ></a-box>
+  
+       
+          
+        </a-entity>
+  
+        <a-entity
+          position="-2 3 -2"
+          animation__2="property: position; to: -2 .5 -2; loop: true; dur: 2000"
+        >
+          <a-box color="blue" width="1" height="1" depth="1" light="type: point; color: #800080; intensity: 1;" ></a-box>
+        </a-entity>
+  
+       
+        <a-light type="hemisphere" color="#black" ></a-light>
+   
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="10" color="green"></a-plane>
+        <a-sky color="light blue"></a-sky>
+      </a-scene>
       <script src = "script.js"> </script>
   </body>
 </html>
+
